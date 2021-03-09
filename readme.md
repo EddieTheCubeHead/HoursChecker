@@ -7,7 +7,7 @@ readme file.
 
 The requirements asked me to spend roughly 2-3 hours on the assignment. I started writing the code a tad after nine on
 tuesday morning and finished writing last bits of code just before half past eleven the same morning. This readme was
-finished some fifteen minutes after that.
+finished some fifteen minutes after that. I also committed some minor tweaks into the test class before midday.
 
 I started with creating all the three classes I knew I would need, Client, HoursChecker and HoursChecker test. I wrote 
 the test cases for HoursChecker first and moved on to write the class itself and wrote the client last, after the 

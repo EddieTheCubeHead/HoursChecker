@@ -1,15 +1,13 @@
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Executable;
-import java.time.DateTimeException;
 import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class HoursCheckerTest {
 
-    // The constructor does all the heavy lifting, thus I chose to implement all tests for the constructor
-    // According to my IDE this hurts coverage. To be frank, I don't care. IDEs are sometimes stupid
+    // The constructor does all the heavy lifting, thus I chose to implement all tests for the constructor.
     @Test
     void HoursChecker() {
 
@@ -46,9 +44,9 @@ class HoursCheckerTest {
 
         // Error handling tests
         // Invalid input (24:00)
-        assertThrows(DateTimeException.class, () -> {new HoursChecker(LocalDate.now(), "18:00", "24:00");});
+        assertThrows(DateTimeParseException.class, () -> new HoursChecker(LocalDate.now(), "18:00", "24:00"));
 
         // Invalid input (weird hours)
-        assertThrows(DateTimeException.class, () -> {new HoursChecker(LocalDate.now(), "25:00", "28:00");});
+        assertThrows(DateTimeParseException.class, () -> new HoursChecker(LocalDate.now(), "25:00", "28:00"));
     }
 }
