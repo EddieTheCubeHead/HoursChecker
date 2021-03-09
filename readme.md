@@ -1,5 +1,4 @@
-EddieCorp working hours checker
-Job application assignment for Visma Solutions
+EddieCorp working hours checker: Job application assignment for Visma Solutions
 
 This program was written as a job application assignment, according to requirements from Visma Solutions. The
 requirements also requested a small description of the process of writing the program that I will include as this
